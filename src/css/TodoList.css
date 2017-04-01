@@ -7,34 +7,76 @@
     justify-content:center;
     align-content:flex-start;
     flex-wrap:wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: solid 1px rgba(51,51,51,0.12);
 }
-.AddItemInput{
-    width:40%;
-    height:5%;
-    margin-left:30%;
-    margin-right:30%;
-    margin-top:1%;
-    margin-bottom:1%;
-    border: 3px solid black;
+.ListHeader{
+    height:20%;
+    width:100%;
+    display:flex;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    background-color:rgb(238, 110, 115);
+    margin: 0 0 20px 0;
 }
-.ListName{
-    display:inline-flex;
-    position:relative;
-    right:26%;
-    align-items:center;
-    margin:2% 2% 2% 2%;
-    width:40%;
-    height:5%;
+.AddItemInput[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #ffcdd2;
+    box-shadow: 0 1px 0 0 #ffcdd2;
 }
-.DeleteListBtn{
-    display:inline-flex;
-    position:relative;
-    left:24%;
-    width:5%;
-    height:4%;
-    border: 3px solid black;
+.AddItemInput[type=text] {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 57%;
+    margin: 0 0 0 0;
+    text-align: center;
+    color:#eceff1;
 }
-h3{
+.AddItemInput::-webkit-input-placeholder {
+    color: #b0bec5;
+}
+.AddItemInput:-moz-placeholder {
+    /* FF 4-18 */
+    color: #b0bec5;
+}
+.AddItemInput::-moz-placeholder {
+    /* FF 19+ */
+    color: #b0bec5;
+}
+.AddItemInput:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #b0bec5;
+}
+.ListName {
+    display: inline-flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 80%;
+    height: 30%;
+    margin: 2%;
+}
+.DeleteListBtn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    font-size: 36px;
+    /* left: 24%; */
+    width: 15%;
+    height: 40%;
+    cursor: pointer;
+    color: #bdbdbd ;
+}
+.DeleteListBtn:hover{
+    cursor: pointer;
+    color: #b71c1c;
+}
+p{
     margin:0 0 0 0;
-    font-size:100%;
+    color:white;
+    font-size: 150%;
 }

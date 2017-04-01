@@ -6,7 +6,6 @@ class TodoList extends Component {
   constructor() {
     super();
     this.state = {
-      inputvalue: ' ',
       itemnum: 0,
     };
     this.handleChange = this.handleChange.bind(this);
@@ -41,14 +40,18 @@ class TodoList extends Component {
     //console.log({this.props.listContent.listname});
     return (
       <div className="TodoList">
-        <div className="ListName"> 
-          <h3>{this.props.listContent.listname}</h3>
-        </div>
-        <div className="DeleteListBtn" onClick={this.handleDeleteListOnClick}/>
-        <input
-          className="AddItemInput" value={this.state.inputvalue}
-          onChange={this.handleChange} onKeyDown={this.handleKeyDown}
-        />        
+        <div className="ListHeader">
+          <div className="ListName"> 
+            <p>{this.props.listContent.listname}</p>
+          </div>
+          <i className="material-icons DeleteListBtn" onClick={this.handleDeleteListOnClick}>delete</i>
+          <input
+            type="text"
+            placeholder="Add something"
+            className="AddItemInput" value={this.state.inputvalue}
+            onChange={this.handleChange} onKeyDown={this.handleKeyDown}
+          />    
+        </div> 
         {this.props.listContent.listitem.map(listitem =>
           <TodoItem
             itemContent={listitem} checkItem={this.handleCheckItem} 

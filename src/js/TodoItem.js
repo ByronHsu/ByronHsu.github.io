@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/TodoItem.css';
+import '../css/materialize.min.css';
 
 class TodoItem extends Component {
   constructor() {
@@ -20,12 +21,15 @@ class TodoItem extends Component {
       alignItems: 'center',
       width: '90%',
       height: '100%',
+      fontSize: '100%',
     };
     const styles2 = {
       display: 'flex',
       alignItems: 'center',
+      color: 'black',
       width: '90%',
       height: '100%',
+      fontSize: '100%',
     };
     let styles;
     if (this.props.itemContent.checked == true){ styles = styles1;}
@@ -34,9 +38,9 @@ class TodoItem extends Component {
     }
     return (
       <div className="TodoItem">
-        <div className="CheckBtn" onClick={this.handleCheckOnClick}/>
-        <h5 style={styles}>{this.props.itemContent.itemname}</h5>
-        <div className="DeleteItemBtn" onClick={this.handleDeleteItemOnClick}/>
+        <input type="checkbox" checked={this.props.itemContent.checked}  />
+        <label style={styles} className="CheckBtn" onClick={this.handleCheckOnClick} >{this.props.itemContent.itemname}</label>
+        <i className="material-icons DeleteItemBtn" onClick={this.handleDeleteItemOnClick}>delete</i>
       </div>
     );
   }
