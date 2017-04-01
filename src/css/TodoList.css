@@ -1,0 +1,40 @@
+.TodoList{
+    display:flex;
+    margin:2% 2% 2% 2%;
+    width:28.5%;
+    height:70%;
+    border: 3px solid black;
+    justify-content:center;
+    align-content:flex-start;
+    flex-wrap:wrap;
+}
+.AddItemInput{
+    width:40%;
+    height:5%;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:1%;
+    margin-bottom:1%;
+    border: 3px solid black;
+}
+.ListName{
+    display:inline-flex;
+    position:relative;
+    right:26%;
+    align-items:center;
+    margin:2% 2% 2% 2%;
+    width:40%;
+    height:5%;
+}
+.DeleteListBtn{
+    display:inline-flex;
+    position:relative;
+    left:24%;
+    width:5%;
+    height:4%;
+    border: 3px solid black;
+}
+h3{
+    margin:0 0 0 0;
+    font-size:100%;
+}

@@ -1,0 +1,20 @@
+.TodoItem{
+    display:flex;
+    width:80%;
+    height:5%;
+    margin:2.5% 2.5% 2.5% 2.5%;
+    border: 3px solid black;
+    align-items:center;
+}
+.CheckBtn{
+    display:inline-flex;
+    width:5%;
+    height:50%;
+    border: 3px solid black;
+}
+.DeleteItemBtn{
+    display:inline-flex;
+    width:5%;
+    height:50%;
+    border: 3px solid black;
+}
