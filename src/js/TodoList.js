@@ -93,11 +93,13 @@ class TodoList extends Component {
             onChange={this.handleChange} onKeyDown={this.handleKeyDown}
           />    
         </div> 
+        <div className="ListContent">
         {this.props.listContent.listitem.map(listitem =>
           <TodoItem
             itemContent={listitem} checkItem={this.handleCheckItem} 
             deleteItem={this.handleDeleteItem} mode={this.props.mode}
           />)}
+        </div>
       </div>
     );
   }

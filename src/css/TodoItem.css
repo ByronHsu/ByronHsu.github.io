@@ -1,8 +1,11 @@
 .TodoItem{
     display:flex;
     width:80%;
-    height:8%;
-    margin:2.5% 2.5% 2.5% 2.5%;
+    height:10%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2.5%;
+    margin-bottom:2.5%;
     align-items:center;
     background-color: #f5f2f0;
     border: solid 1px rgba(51,51,51,0.12);

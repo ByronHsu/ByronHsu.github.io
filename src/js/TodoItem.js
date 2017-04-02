@@ -39,7 +39,7 @@ class TodoItem extends Component {
       fontSize: '100%',
     };
     let styles;
-    if (this.props.itemContent.checked == true){ styles = styles1; d = d1; }
+    if (this.props.itemContent.checked === true){ styles = styles1; d = d1; }
     else {
       styles = styles2; d = d2;
     }
