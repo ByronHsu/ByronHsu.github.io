@@ -7,6 +7,7 @@
     background-color: #f5f2f0;
     border: solid 1px rgba(51,51,51,0.12);
 }
+
 .waves-color-demo .btn:not(.waves-light), .waves-color-demo .btn-large:not(.waves-light) {
     background-color: #fff;
     color: #212121;
